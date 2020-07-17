@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #0acdff;
+}
+
+header {
+    background-color: #60ab9a;
+
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+footer {
+    padding: 15px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Emilys Candy', cursive;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    margin: 25px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+figure {
+    margin: 20px;
+}
+
+p, figcaption {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+figcaption {
+    text-align: center;
+}
+
+strong {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+button {
+    background-color: #60ab9a;
+    border: 1px solid #ffffff;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+
+    padding: 10px;
+}
+
+button:hover, input[type='submit']:hover {
+    background-color: #7fbbad;
+}
+
+textarea, input[type='email'], input[type='submit'] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+    outline: none;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+input[type='submit'] {
+
+    font-size: 20px;
+    background-color: #60ab9a;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+textarea {
+    resize: none;
+}
+
+#company-info {
+    display: flex;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+#header-img {
+    height: auto;
+    margin-right: 5px;
+}
+
+#main-container {
+    background-image: linear-gradient(#dedee0, #fbdce2);
+    padding-top: 134px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-section {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#browse-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#blessings {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hat {
+    max-width: 100px;
+    height: auto;
+}
+
+#greenhouse {
+    max-width: 150px;
+    height: auto
+}
+
+#person {
+    max-height: 160px;
+    width: auto;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff;
+
+    font-size: 12px;
+}
+
+.sale-item {
+    background-color: #ffffff;
+    box-shadow: 5px 10px 8px #c7c7c9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.credit-text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    iframe {
+        max-width: 250px;
+        height: auto;
+    }
+
+    #header-img {
+        max-width: 60px;
+        -webkit-filter: invert(100%);
+    }
+
+    #nav-bar {    
+        align-items: flex-start;
+        justify-content: flex-end;
+        
+        padding: 0;
+        margin-left: 60px;
+    }
+
+    #company-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about, #browse, #contact {
+        position: absolute;
+    }
+
+    #about {
+        top: -170px
+    }
+
+    #browse {
+        top: 515px;
+    }
+
+    #contact {
+        top: 1250px;
+    }
+
+    #about-section {
+        max-width: 90%;
+    }
+
+    #browse-section {
+        width: 75%;
+    }
+
+    #about-text {
+        max-width: 90%;
+    }
+
+    #blessings {
+        flex-direction: column;
+    }
+
+    #form {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .sale-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 400px) {
+
+    header {
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    iframe {
+        max-width: 300px;
+        height: auto;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #header-img {
+        max-width: 70px;
+        -webkit-filter: invert(100%);
+    }
+
+    #nav-bar {    
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        
+        padding: 0;
+
+        margin-left: 70px;
+    }
+
+    #company-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about, #browse, #contact {
+        position: absolute;
+    }
+
+    #about {
+        top: -170px
+    }
+
+    #browse {
+        top: 515px;
+    }
+
+    #contact {
+        top: 1250px;
+    }
+
+    #about-section {
+        max-width: 90%;
+    }
+
+    #about-text {
+        max-width: 90%;
+    }
+
+    #blessings {
+        flex-direction: column;
+    }
+
+    #form {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .sale-item {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+    html {
+        scroll-padding-top: 135px;
+    }
+
+    header {
+        justify-content: space-between;
+
+        height: 150px;
+    }
+
+    iframe {
+        max-width: 600px;
+        width: 560px;
+        height: 315px;
+    }
+
+    #company-info {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #nav-bar {
+        margin-right: 15px;
+        padding: 5px;
+        width: 20%;
+
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    #header-img {
+        max-width: 100px;
+        filter: invert(100%);
+    }
+
+    #about-section {
+        max-width: 75%;
+    }
+
+    #about-text {
+        max-width: 75%;
+    }
+
+    #browse {
+        top: 650px;
+    }
+
+    #contact {
+        top: 1400px;
+    }
+}
