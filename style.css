@@ -374,6 +374,7 @@ textarea {
 
     #company-info {
         display: flex;
+        flex-direction: row;
         align-items: flex-end;
     }
 
