@@ -406,4 +406,8 @@ textarea {
     #contact {
         top: 1400px;
     }
+
+    #blessings {
+        flex-direction: row;
+    }
 }
